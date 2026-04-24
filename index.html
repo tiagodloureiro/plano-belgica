@@ -82,28 +82,41 @@
 
                 <!-- Day 1 -->
                 <article class="card bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div class="bg-slate-800 text-white font-bold text-lg rounded-xl w-14 h-14 flex flex-col items-center justify-center">
-                            <span>01</span>
-                            <span class="text-xs font-normal">MAI</span>
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-4">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-slate-800 text-white font-bold text-lg rounded-xl w-14 h-14 flex flex-col items-center justify-center shrink-0">
+                                <span>01</span>
+                                <span class="text-xs font-normal">MAI</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-800">Sexta-feira: Chegada a Bruxelas</h3>
+                                <p class="text-slate-500 text-sm">Voo: Chegada às 10:10 (CRL)</p>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-slate-800">Sexta-feira: Chegada e Bruxelas</h3>
-                            <p class="text-slate-500 text-sm">Voo: Chegada às 10:10 (CRL)</p>
-                        </div>
+                        <span class="bg-red-100 text-red-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">⚠️ Feriado Nacional</span>
                     </div>
-                    <ul class="space-y-3 text-slate-600">
-                        <li class="flex gap-3"><span class="text-blue-500 font-bold">✈️</span> <span>Apanhar o autocarro <strong>Flibco</strong> em Charleroi diretamente para a estação Bruxelles-Midi (aprox. 55 mins).</span></li>
-                        <li class="flex gap-3"><span class="text-blue-500 font-bold">🏨</span> <span>Caminhada de 5-10 minutos até ao Yooma Urban Lodge para check-in. Sem necessidade de táxi ou metro!</span></li>
-                        <li class="flex gap-3"><span class="text-blue-500 font-bold">🚶</span> <span><strong>Tarde relaxada:</strong> Caminhada ou elétrico até à <em>Grand-Place</em>. Ver o Manneken Pis e provar os primeiros waffles.</span></li>
-                        <li class="flex gap-3"><span class="text-blue-500 font-bold">🍽️</span> <span><strong>Jantar:</strong> <a href="https://maps.app.goo.gl/..." class="text-blue-600 hover:underline font-medium">Brasserie L'Escale</a>. Fica a 2 minutos a pé do hotel! Provem a maravilhosa carne <em>Carbonnade Flamande</em> com batatas fritas locais.</span></li>
+                    <ul class="space-y-4 text-slate-600 mt-6">
+                        <li class="flex gap-3"><span class="text-blue-500 font-bold mt-0.5">✈️</span> 
+                            <div>
+                                <span>Apanhar o autocarro <strong>Flibco</strong> em Charleroi diretamente para a estação Bruxelles-Midi (aprox. 55 mins).</span>
+                                <p class="text-sm text-orange-600 mt-1 bg-orange-50 p-2 rounded"><strong>Atenção:</strong> Como é feriado, verifiquem os horários do Flibco antecipadamente, pois podem estar a operar com horários de domingo.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3"><span class="text-blue-500 font-bold mt-0.5">🏨</span> <span>Caminhada de 5-10 minutos até ao Yooma Urban Lodge para check-in. Sem necessidade de táxi ou metro!</span></li>
+                        <li class="flex gap-3"><span class="text-blue-500 font-bold mt-0.5">🚶</span> <span><strong>Tarde relaxada:</strong> Caminhada ou elétrico até à <em>Grand-Place</em>. Ver o Manneken Pis e provar os primeiros waffles.</span></li>
+                        <li class="flex gap-3"><span class="text-blue-500 font-bold mt-0.5">🍽️</span> 
+                            <div>
+                                <span><strong>Jantar:</strong> <a href="https://maps.app.goo.gl/..." class="text-blue-600 hover:underline font-medium">Brasserie L'Escale</a>. Fica a 2 minutos a pé do hotel. Provem a <em>Carbonnade Flamande</em>.</span>
+                                <p class="text-sm text-red-600 mt-2 bg-red-50 p-2 rounded border border-red-100"><strong>Plano B (Muito Importante):</strong> Sendo 1 de Maio, muitos restaurantes familiares fecham. Passem pelo L'Escale de tarde para confirmar. Se estiver fechado, a alternativa garantida é o <strong>Victor Bar & Restaurant</strong> (dentro do Hotel Pullman na estação Midi, a 5 min) ou apanhar o elétrico para o centro turístico onde nada fecha.</p>
+                            </div>
+                        </li>
                     </ul>
                 </article>
 
                 <!-- Day 2 -->
                 <article class="card bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
                     <div class="flex items-center gap-4 mb-4">
-                        <div class="bg-indigo-600 text-white font-bold text-lg rounded-xl w-14 h-14 flex flex-col items-center justify-center">
+                        <div class="bg-indigo-600 text-white font-bold text-lg rounded-xl w-14 h-14 flex flex-col items-center justify-center shrink-0">
                             <span>02</span>
                             <span class="text-xs font-normal">MAI</span>
                         </div>
@@ -112,18 +125,23 @@
                             <p class="text-slate-500 text-sm">Viagem de Comboio (~1h)</p>
                         </div>
                     </div>
-                    <ul class="space-y-3 text-slate-600">
-                        <li class="flex gap-3"><span class="text-indigo-500 font-bold">🚆</span> <span>Comboio de Bruxelles-Midi para Brugge. Aproveitem o <em>Weekend Ticket</em> para adultos (crianças grátis).</span></li>
-                        <li class="flex gap-3"><span class="text-indigo-500 font-bold">🏰</span> <span>Passeio a pé pelo centro histórico de Bruges, conhecido como a Veneza do Norte. Ambiente medieval e romântico.</span></li>
-                        <li class="flex gap-3"><span class="text-indigo-500 font-bold">🚤</span> <span><strong>Dica:</strong> Façam um passeio de barco nos canais. É calmo, perfeito para descansar as pernas e ótimo para as crianças.</span></li>
-                        <li class="flex gap-3"><span class="text-indigo-500 font-bold">🍫</span> <span>Regresso ao final da tarde a Bruxelas. Parem para comprar chocolates nas lojas artesanais de Bruges.</span></li>
+                    <ul class="space-y-4 text-slate-600 mt-6">
+                        <li class="flex gap-3"><span class="text-indigo-500 font-bold mt-0.5">🚆</span> <span>Comboio de Bruxelles-Midi para Brugge. Aproveitem o <em>Weekend Ticket</em> para os adultos. Como o dia anterior foi feriado, o desconto de fim de semana já deverá estar ativo.</span></li>
+                        <li class="flex gap-3"><span class="text-indigo-500 font-bold mt-0.5">🚤</span> 
+                            <div>
+                                <span><strong>Passeio de barco nos canais:</strong> É calmo, perfeito para descansar as pernas e ótimo para as crianças.</span>
+                                <p class="text-sm text-indigo-700 mt-1 bg-indigo-50 p-2 rounded"><strong>Dica de Sobrevivência:</strong> Fim de semana prolongado = Multidões. Os bilhetes não se vendem online. <strong>Vão para a fila dos barcos logo às 10h da manhã</strong> mal cheguem à cidade para evitar esperas de mais de 1 hora!</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3"><span class="text-indigo-500 font-bold mt-0.5">🏰</span> <span>Passeio a pé pelo centro histórico de Bruges, conhecido como a Veneza do Norte. Ambiente medieval e romântico.</span></li>
+                        <li class="flex gap-3"><span class="text-indigo-500 font-bold mt-0.5">🍫</span> <span>Regresso ao final da tarde a Bruxelas. Parem para comprar chocolates nas lojas artesanais de Bruges.</span></li>
                     </ul>
                 </article>
 
                 <!-- Day 3 -->
                 <article class="card bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
                     <div class="flex items-center gap-4 mb-4">
-                        <div class="bg-emerald-600 text-white font-bold text-lg rounded-xl w-14 h-14 flex flex-col items-center justify-center">
+                        <div class="bg-emerald-600 text-white font-bold text-lg rounded-xl w-14 h-14 flex flex-col items-center justify-center shrink-0">
                             <span>03</span>
                             <span class="text-xs font-normal">MAI</span>
                         </div>
@@ -132,17 +150,17 @@
                             <p class="text-slate-500 text-sm">Dia com o Irmão (Sem viagens)</p>
                         </div>
                     </div>
-                    <ul class="space-y-3 text-slate-600">
-                        <li class="flex gap-3"><span class="text-emerald-500 font-bold">🌳</span> <span>Dia relaxante sem apanhar comboios longos. Ideal para passar tempo em família no <strong>Parc du Cinquantenaire</strong>.</span></li>
-                        <li class="flex gap-3"><span class="text-emerald-500 font-bold">🍟</span> <span><strong>Almoço/Lanche:</strong> Comam nas famosas rulotes de batatas fritas (<em>Fritkots</em>). A <em>Maison Antoine</em> (Praça Jourdan) é lendária. As crianças correm e vocês relaxam com uma bebida na mão.</span></li>
-                        <li class="flex gap-3"><span class="text-emerald-500 font-bold">🏛️</span> <span>Se o tempo não ajudar, podem passear pelas Galerias Reais Saint-Hubert, sem entrar em museus.</span></li>
+                    <ul class="space-y-4 text-slate-600 mt-6">
+                        <li class="flex gap-3"><span class="text-emerald-500 font-bold mt-0.5">🌳</span> <span>Dia relaxante sem apanhar comboios longos. Ideal para passar tempo em família no <strong>Parc du Cinquantenaire</strong>.</span></li>
+                        <li class="flex gap-3"><span class="text-emerald-500 font-bold mt-0.5">🍟</span> <span><strong>Almoço/Lanche:</strong> Comam nas famosas rulotes de batatas fritas (<em>Fritkots</em>). A <em>Maison Antoine</em> (Praça Jourdan) é lendária e está aberta ao domingo! As crianças correm e vocês relaxam com uma bebida na mão.</span></li>
+                        <li class="flex gap-3"><span class="text-emerald-500 font-bold mt-0.5">🏛️</span> <span>Se o tempo não ajudar, podem passear pelas Galerias Reais Saint-Hubert, sem entrar em museus.</span></li>
                     </ul>
                 </article>
 
                 <!-- Day 4 -->
                 <article class="card bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
                     <div class="flex items-center gap-4 mb-4">
-                        <div class="bg-orange-500 text-white font-bold text-lg rounded-xl w-14 h-14 flex flex-col items-center justify-center">
+                        <div class="bg-orange-500 text-white font-bold text-lg rounded-xl w-14 h-14 flex flex-col items-center justify-center shrink-0">
                             <span>04</span>
                             <span class="text-xs font-normal">MAI</span>
                         </div>
@@ -151,17 +169,22 @@
                             <p class="text-slate-500 text-sm">Viagem de Comboio (~35 mins)</p>
                         </div>
                     </div>
-                    <ul class="space-y-3 text-slate-600">
-                        <li class="flex gap-3"><span class="text-orange-500 font-bold">🚆</span> <span>Comboio de Bruxelles-Midi para Gent-Sint-Pieters. Viagem super rápida.</span></li>
-                        <li class="flex gap-3"><span class="text-orange-500 font-bold">🏰</span> <span>Apanhar o elétrico até ao centro. Visitar (por fora) o imponente <strong>Castelo dos Condes (Gravensteen)</strong> e passear pelas margens Graslei e Korenlei.</span></li>
-                        <li class="flex gap-3"><span class="text-orange-500 font-bold">🍲</span> <span><strong>Almoço:</strong> Provem o <em>Waterzooi</em>, um ensopado local rico e cremoso, original de Ghent. Excelente para um dia ameno e as crianças costumam adorar.</span></li>
+                    <ul class="space-y-4 text-slate-600 mt-6">
+                        <li class="flex gap-3"><span class="text-orange-500 font-bold mt-0.5">🚆</span> <span>Comboio de Bruxelles-Midi para Gent-Sint-Pieters. Viagem super rápida.</span></li>
+                        <li class="flex gap-3"><span class="text-orange-500 font-bold mt-0.5">🏰</span> 
+                            <div>
+                                <span>Apanhar o elétrico até ao centro e passear pelas margens Graslei e Korenlei.</span>
+                                <p class="text-sm text-slate-500 mt-1"><strong>Sobre o Castelo (Gravensteen):</strong> Podem ver o castelo por fora. Como a vossa regra é evitar museus fechados, não vale a pena pagar bilhete para entrar (por dentro tem exposições de armas e antiguidade). A melhor foto tira-se da ponte exterior!</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3"><span class="text-orange-500 font-bold mt-0.5">🍲</span> <span><strong>Almoço:</strong> Provem o <em>Waterzooi</em>, um ensopado local rico e cremoso, original de Ghent. Excelente para um dia ameno e as crianças costumam adorar.</span></li>
                     </ul>
                 </article>
 
                 <!-- Day 5 -->
                 <article class="card bg-white rounded-2xl p-6 shadow-sm border border-slate-100 mb-8">
                     <div class="flex items-center gap-4 mb-4">
-                        <div class="bg-red-500 text-white font-bold text-lg rounded-xl w-14 h-14 flex flex-col items-center justify-center">
+                        <div class="bg-red-500 text-white font-bold text-lg rounded-xl w-14 h-14 flex flex-col items-center justify-center shrink-0">
                             <span>05</span>
                             <span class="text-xs font-normal">MAI</span>
                         </div>
@@ -170,10 +193,10 @@
                             <p class="text-slate-500 text-sm">Voo: Partida às 22:00 (CRL)</p>
                         </div>
                     </div>
-                    <ul class="space-y-3 text-slate-600">
-                        <li class="flex gap-3"><span class="text-red-500 font-bold">🛍️</span> <span>Manhã pelo bairro de Sablon, conhecido pelas luxuosas lojas de chocolate (ideal para compras de última hora).</span></li>
-                        <li class="flex gap-3"><span class="text-red-500 font-bold">🍽️</span> <span>Almoço calmo de despedida em Bruxelas.</span></li>
-                        <li class="flex gap-3"><span class="text-red-500 font-bold">🚌</span> <span><strong>18:30 -</strong> Apanhar o Flibco de regresso ao Aeroporto de Charleroi na estação Midi, garantindo chegada às 19:30.</span></li>
+                    <ul class="space-y-4 text-slate-600 mt-6">
+                        <li class="flex gap-3"><span class="text-red-500 font-bold mt-0.5">🛍️</span> <span>Manhã pelo bairro de Sablon, conhecido pelas luxuosas lojas de chocolate (ideal para compras de última hora).</span></li>
+                        <li class="flex gap-3"><span class="text-red-500 font-bold mt-0.5">🍽️</span> <span>Almoço calmo de despedida em Bruxelas.</span></li>
+                        <li class="flex gap-3"><span class="text-red-500 font-bold mt-0.5">🚌</span> <span><strong>18:30 -</strong> Apanhar o Flibco de regresso ao Aeroporto de Charleroi na estação Midi, garantindo chegada às 19:30.</span></li>
                     </ul>
                 </article>
 
@@ -240,14 +263,14 @@
                 <div class="bg-blue-50 rounded-2xl p-6 border border-blue-100 text-center">
                     <h3 class="font-bold text-blue-900 mb-2">Preparação em Casa</h3>
                     <p class="text-sm text-blue-700 mb-4">Compre os bilhetes Flibco online e instale a app da SNCB para os comboios.</p>
-                    <a href="https://www.flibco.com" target="_blank" class="block w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition">Comprar Flibco</a>
+                    <a href="https://www.flibco.com" target="_blank" class="block w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition shadow-md">Comprar Flibco Online</a>
                 </div>
 
             </div>
         </div>
     </main>
 
-    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm">
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm mt-12 border-t border-slate-800">
         <p>Criado com cuidado para a família Loureiro. Boa viagem à Bélgica!</p>
     </footer>
 
