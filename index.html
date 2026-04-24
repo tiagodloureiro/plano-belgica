@@ -28,6 +28,11 @@
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
         }
+        .timeline-time {
+            width: 70px;
+            flex-shrink: 0;
+            font-variant-numeric: tabular-nums;
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -37,14 +42,14 @@
         <div class="max-w-4xl mx-auto relative z-10">
             <span class="inline-block py-1 px-3 rounded-full bg-yellow-500/90 text-yellow-950 text-sm font-bold tracking-wider mb-4 uppercase shadow-sm">1 a 5 de Maio</span>
             <h1 class="text-5xl md:text-6xl font-bold mb-4 drop-shadow-md">Viagem à Bélgica</h1>
-            <p class="text-xl md:text-2xl font-light text-slate-100 max-w-2xl mx-auto drop-shadow">Um roteiro pensado para a família: tranquilo, prático e focado nas melhores experiências gastronómicas locais.</p>
+            <p class="text-xl md:text-2xl font-light text-slate-100 max-w-2xl mx-auto drop-shadow">Um roteiro detalhado para a família: tranquilo, sincronizado e sem pressas.</p>
         </div>
     </header>
 
     <main class="max-w-5xl mx-auto px-4 sm:px-6 py-12 -mt-10 relative z-20">
         
         <!-- Info Bar -->
-        <div class="glass-panel rounded-2xl shadow-lg p-6 mb-12 flex flex-col md:flex-row justify-around items-center gap-6 border border-slate-100">
+        <div class="glass-panel rounded-2xl shadow-lg p-6 mb-8 flex flex-col md:flex-row justify-around items-center gap-6 border border-slate-100">
             <div class="flex items-center gap-3">
                 <div class="bg-blue-100 p-3 rounded-full text-blue-600">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
@@ -60,16 +65,27 @@
                 </div>
                 <div>
                     <h3 class="font-semibold text-slate-800">Yooma Urban Lodge</h3>
-                    <p class="text-sm text-slate-500">Perto de Bruxelles-Midi</p>
+                    <p class="text-sm text-slate-500">A 5 min da Estação Midi</p>
                 </div>
             </div>
             <div class="flex items-center gap-3">
-                <div class="bg-emerald-100 p-3 rounded-full text-emerald-600">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <div class="bg-amber-100 p-3 rounded-full text-amber-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 </div>
                 <div>
-                    <h3 class="font-semibold text-slate-800">Dica de Ouro</h3>
-                    <p class="text-sm text-slate-500">Crianças < 12 anos não pagam comboio</p>
+                    <h3 class="font-semibold text-slate-800">Rotina Matinal</h3>
+                    <p class="text-sm text-slate-500">Despertar às 07:00</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Breakfast Tip -->
+        <div class="bg-yellow-50 border border-yellow-200 rounded-2xl p-6 mb-12 shadow-sm">
+            <div class="flex items-start gap-4">
+                <div class="text-3xl">🥐</div>
+                <div>
+                    <h3 class="font-bold text-yellow-900 text-lg mb-1">Dica de Pequeno-Almoço (Rápido e Barato)</h3>
+                    <p class="text-yellow-800 text-sm">Com duas crianças pequenas, comer no quarto do hotel após acordarem às 07h00 é a melhor estratégia. Na <strong>estação Bruxelles-Midi</strong> (a 5 mins do hotel) existe um supermercado <strong>Carrefour Express</strong> que abre muito cedo. Podem também procurar uma pastelaria (<em>boulangerie</em>) perto do <em>Square de l'Aviation</em> no dia anterior para comprar pão fresco, queijo e fiambre para a manhã seguinte.</p>
                 </div>
             </div>
         </div>
@@ -78,126 +94,131 @@
             
             <!-- Left Column: Itinerary -->
             <div class="lg:col-span-2 space-y-8">
-                <h2 class="text-3xl font-bold text-slate-800 border-b pb-2 border-slate-200">Itinerário Diário</h2>
+                <h2 class="text-3xl font-bold text-slate-800 border-b pb-2 border-slate-200">Cronograma Diário</h2>
 
                 <!-- Day 1 -->
                 <article class="card bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
-                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-4">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6 pb-4 border-b border-slate-50">
                         <div class="flex items-center gap-4">
-                            <div class="bg-slate-800 text-white font-bold text-lg rounded-xl w-14 h-14 flex flex-col items-center justify-center shrink-0">
+                            <div class="bg-slate-800 text-white font-bold text-lg rounded-xl w-14 h-14 flex flex-col items-center justify-center shrink-0 shadow">
                                 <span>01</span>
                                 <span class="text-xs font-normal">MAI</span>
                             </div>
                             <div>
-                                <h3 class="text-xl font-bold text-slate-800">Sexta-feira: Chegada a Bruxelas</h3>
-                                <p class="text-slate-500 text-sm">Voo: Chegada às 10:10 (CRL)</p>
+                                <h3 class="text-xl font-bold text-slate-800">Sexta: Chegada a Bruxelas</h3>
+                                <p class="text-slate-500 text-sm">Atenção ao feriado nacional</p>
                             </div>
                         </div>
-                        <span class="bg-red-100 text-red-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">⚠️ Feriado Nacional</span>
+                        <span class="bg-red-100 text-red-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">⚠️ Feriado</span>
                     </div>
-                    <ul class="space-y-4 text-slate-600 mt-6">
-                        <li class="flex gap-3"><span class="text-blue-500 font-bold mt-0.5">✈️</span> 
-                            <div>
-                                <span>Apanhar o autocarro <strong>Flibco</strong> em Charleroi diretamente para a estação Bruxelles-Midi (aprox. 55 mins).</span>
-                                <p class="text-sm text-orange-600 mt-1 bg-orange-50 p-2 rounded"><strong>Atenção:</strong> Como é feriado, verifiquem os horários do Flibco antecipadamente, pois podem estar a operar com horários de domingo.</p>
-                            </div>
-                        </li>
-                        <li class="flex gap-3"><span class="text-blue-500 font-bold mt-0.5">🏨</span> <span>Caminhada de 5-10 minutos até ao Yooma Urban Lodge para check-in. Sem necessidade de táxi ou metro!</span></li>
-                        <li class="flex gap-3"><span class="text-blue-500 font-bold mt-0.5">🚶</span> <span><strong>Tarde relaxada:</strong> Caminhada ou elétrico até à <em>Grand-Place</em>. Ver o Manneken Pis e provar os primeiros waffles.</span></li>
-                        <li class="flex gap-3"><span class="text-blue-500 font-bold mt-0.5">🍽️</span> 
-                            <div>
-                                <span><strong>Jantar:</strong> <a href="https://maps.app.goo.gl/..." class="text-blue-600 hover:underline font-medium">Brasserie L'Escale</a>. Fica a 2 minutos a pé do hotel. Provem a <em>Carbonnade Flamande</em>.</span>
-                                <p class="text-sm text-red-600 mt-2 bg-red-50 p-2 rounded border border-red-100"><strong>Plano B (Muito Importante):</strong> Sendo 1 de Maio, muitos restaurantes familiares fecham. Passem pelo L'Escale de tarde para confirmar. Se estiver fechado, a alternativa garantida é o <strong>Victor Bar & Restaurant</strong> (dentro do Hotel Pullman na estação Midi, a 5 min) ou apanhar o elétrico para o centro turístico onde nada fecha.</p>
-                            </div>
-                        </li>
-                    </ul>
+                    
+                    <div class="space-y-4">
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">10:10</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-blue-500 rounded-full -left-[7px] top-1"></div><strong>Aterragem no Aeroporto (CRL).</strong></div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">11:00</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-blue-400 rounded-full -left-[7px] top-1"></div><strong>Viagem Flibco.</strong> Duração de ~55 min. <em>Verifiquem horários de feriado no site.</em></div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">12:00</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-slate-300 rounded-full -left-[7px] top-1"></div><strong>Chegada a Bruxelles-Midi.</strong> Caminhada de 5-10 minutos a pé com as malas até ao hotel (400m).</div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">12:30</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-amber-500 rounded-full -left-[7px] top-1"></div><strong>Check-in no hotel.</strong></div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">13:30</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-green-500 rounded-full -left-[7px] top-1"></div><strong>Passeio & Almoço Ligeiro.</strong> Viagem de elétrico (10 min) ou a pé (20 min) para a <em>Grand-Place</em>. Podem almoçar waffles pelas ruas.</div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">18:30</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-slate-300 rounded-full -left-[7px] top-1"></div><strong>Regresso ao hotel</strong> (15-20 min a pé ou elétrico) para descanso das crianças.</div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">19:30</div><div class="pb-0 pl-4 relative"><div class="absolute w-3 h-3 bg-red-500 rounded-full -left-[7px] top-1"></div><strong>Jantar.</strong> Tentem o <em>L'Escale</em> na mesma praça. Se estiver fechado (devido ao feriado), o Plano B é caminhar 5 mins até à estação Midi e jantar no <em>Victor Bar & Restaurant</em> (Hotel Pullman, nunca fecha).</div></div>
+                    </div>
                 </article>
 
                 <!-- Day 2 -->
                 <article class="card bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div class="bg-indigo-600 text-white font-bold text-lg rounded-xl w-14 h-14 flex flex-col items-center justify-center shrink-0">
+                    <div class="flex items-center gap-4 mb-6 pb-4 border-b border-slate-50">
+                        <div class="bg-indigo-600 text-white font-bold text-lg rounded-xl w-14 h-14 flex flex-col items-center justify-center shrink-0 shadow">
                             <span>02</span>
                             <span class="text-xs font-normal">MAI</span>
                         </div>
                         <div>
                             <h3 class="text-xl font-bold text-slate-800">Sábado: Bate-e-Volta a Bruges</h3>
-                            <p class="text-slate-500 text-sm">Viagem de Comboio (~1h)</p>
+                            <p class="text-slate-500 text-sm">Desconto "Weekend Ticket" ativado</p>
                         </div>
                     </div>
-                    <ul class="space-y-4 text-slate-600 mt-6">
-                        <li class="flex gap-3"><span class="text-indigo-500 font-bold mt-0.5">🚆</span> <span>Comboio de Bruxelles-Midi para Brugge. Aproveitem o <em>Weekend Ticket</em> para os adultos. Como o dia anterior foi feriado, o desconto de fim de semana já deverá estar ativo.</span></li>
-                        <li class="flex gap-3"><span class="text-indigo-500 font-bold mt-0.5">🚤</span> 
-                            <div>
-                                <span><strong>Passeio de barco nos canais:</strong> É calmo, perfeito para descansar as pernas e ótimo para as crianças.</span>
-                                <p class="text-sm text-indigo-700 mt-1 bg-indigo-50 p-2 rounded"><strong>Dica de Sobrevivência:</strong> Fim de semana prolongado = Multidões. Os bilhetes não se vendem online. <strong>Vão para a fila dos barcos logo às 10h da manhã</strong> mal cheguem à cidade para evitar esperas de mais de 1 hora!</p>
-                            </div>
-                        </li>
-                        <li class="flex gap-3"><span class="text-indigo-500 font-bold mt-0.5">🏰</span> <span>Passeio a pé pelo centro histórico de Bruges, conhecido como a Veneza do Norte. Ambiente medieval e romântico.</span></li>
-                        <li class="flex gap-3"><span class="text-indigo-500 font-bold mt-0.5">🍫</span> <span>Regresso ao final da tarde a Bruxelas. Parem para comprar chocolates nas lojas artesanais de Bruges.</span></li>
-                    </ul>
+                    
+                    <div class="space-y-4">
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">07:00</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-yellow-400 rounded-full -left-[7px] top-1"></div><strong>Acordar & Pequeno-almoço</strong> no quarto.</div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">08:45</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-slate-300 rounded-full -left-[7px] top-1"></div><strong>Caminhada</strong> (10 min) para a estação Bruxelles-Midi.</div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">09:15</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-indigo-500 rounded-full -left-[7px] top-1"></div><strong>Comboio para Bruges.</strong> Viagem demora ~1 hora.</div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">10:15</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-slate-300 rounded-full -left-[7px] top-1"></div><strong>Chegada a Bruges.</strong> Caminhada da estação até ao centro histórico (Rozenhoedkaai) demora 15 a 20 minutos a pé. (Ou autocarro local de 5 mins).</div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">10:45</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-blue-500 rounded-full -left-[7px] top-1"></div><strong>Barcos nos Canais.</strong> Dica crítica: Vão direitos para a fila dos barcos! Por ser um "fim de semana de ponte", enche muito depressa. Passeio dura 30 mins.</div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">12:30</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-green-500 rounded-full -left-[7px] top-1"></div><strong>Almoço e Passeio.</strong> Explorem a cidade (Lago do Amor, compras de chocolate).</div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">17:30</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-slate-300 rounded-full -left-[7px] top-1"></div><strong>Regresso à estação</strong> (20 mins a pé).</div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">18:00</div><div class="pb-0 pl-4 relative"><div class="absolute w-3 h-3 bg-indigo-500 rounded-full -left-[7px] top-1"></div><strong>Comboio para Bruxelas.</strong> Viagem de 1h. Chegada pelas 19:00 e jantar nas redondezas do hotel.</div></div>
+                    </div>
                 </article>
 
                 <!-- Day 3 -->
                 <article class="card bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div class="bg-emerald-600 text-white font-bold text-lg rounded-xl w-14 h-14 flex flex-col items-center justify-center shrink-0">
+                    <div class="flex items-center gap-4 mb-6 pb-4 border-b border-slate-50">
+                        <div class="bg-emerald-600 text-white font-bold text-lg rounded-xl w-14 h-14 flex flex-col items-center justify-center shrink-0 shadow">
                             <span>03</span>
                             <span class="text-xs font-normal">MAI</span>
                         </div>
                         <div>
                             <h3 class="text-xl font-bold text-slate-800">Domingo: Relaxar em Bruxelas</h3>
-                            <p class="text-slate-500 text-sm">Dia com o Irmão (Sem viagens)</p>
+                            <p class="text-slate-500 text-sm">Dia com o Irmão (Ritmo Lento)</p>
                         </div>
                     </div>
-                    <ul class="space-y-4 text-slate-600 mt-6">
-                        <li class="flex gap-3"><span class="text-emerald-500 font-bold mt-0.5">🌳</span> <span>Dia relaxante sem apanhar comboios longos. Ideal para passar tempo em família no <strong>Parc du Cinquantenaire</strong>.</span></li>
-                        <li class="flex gap-3"><span class="text-emerald-500 font-bold mt-0.5">🍟</span> <span><strong>Almoço/Lanche:</strong> Comam nas famosas rulotes de batatas fritas (<em>Fritkots</em>). A <em>Maison Antoine</em> (Praça Jourdan) é lendária e está aberta ao domingo! As crianças correm e vocês relaxam com uma bebida na mão.</span></li>
-                        <li class="flex gap-3"><span class="text-emerald-500 font-bold mt-0.5">🏛️</span> <span>Se o tempo não ajudar, podem passear pelas Galerias Reais Saint-Hubert, sem entrar em museus.</span></li>
-                    </ul>
+                    
+                    <div class="space-y-4">
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">07:00</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-yellow-400 rounded-full -left-[7px] top-1"></div><strong>Acordar & Pequeno-almoço</strong> sem pressas no quarto.</div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">10:00</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-purple-500 rounded-full -left-[7px] top-1"></div><strong>Viagem de Metro.</strong> Caminhada de 5 mins até à estação Midi. Apanhar Metro (Linha 2/6 até Arts-Loi, trocar para 1/5 até Merode/Schuman). Demora ~25 mins.</div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">10:30</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-emerald-500 rounded-full -left-[7px] top-1"></div><strong>Parc du Cinquantenaire.</strong> Relva, brincadeira para os miúdos ao ar livre.</div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">12:30</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-slate-300 rounded-full -left-[7px] top-1"></div><strong>Caminhada</strong> (10 mins) até à Praça Jourdan.</div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">13:00</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-orange-500 rounded-full -left-[7px] top-1"></div><strong>Fritkot Maison Antoine.</strong> Podem demorar 20-30 mins na fila, mas vale a pena. Comam sentados nos bares em redor (comprando lá as cervejas).</div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">15:00</div><div class="pb-0 pl-4 relative"><div class="absolute w-3 h-3 bg-purple-500 rounded-full -left-[7px] top-1"></div><strong>Regresso ao Hotel.</strong> (Metro: ~25 mins) para sesta das crianças. Fim de tarde livre pelo bairro e jantar.</div></div>
+                    </div>
                 </article>
 
                 <!-- Day 4 -->
                 <article class="card bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div class="bg-orange-500 text-white font-bold text-lg rounded-xl w-14 h-14 flex flex-col items-center justify-center shrink-0">
+                    <div class="flex items-center gap-4 mb-6 pb-4 border-b border-slate-50">
+                        <div class="bg-orange-500 text-white font-bold text-lg rounded-xl w-14 h-14 flex flex-col items-center justify-center shrink-0 shadow">
                             <span>04</span>
                             <span class="text-xs font-normal">MAI</span>
                         </div>
                         <div>
                             <h3 class="text-xl font-bold text-slate-800">Segunda-feira: Encantos de Ghent</h3>
-                            <p class="text-slate-500 text-sm">Viagem de Comboio (~35 mins)</p>
+                            <p class="text-slate-500 text-sm">Viagens curtas, cidade compacta</p>
                         </div>
                     </div>
-                    <ul class="space-y-4 text-slate-600 mt-6">
-                        <li class="flex gap-3"><span class="text-orange-500 font-bold mt-0.5">🚆</span> <span>Comboio de Bruxelles-Midi para Gent-Sint-Pieters. Viagem super rápida.</span></li>
-                        <li class="flex gap-3"><span class="text-orange-500 font-bold mt-0.5">🏰</span> 
-                            <div>
-                                <span>Apanhar o elétrico até ao centro e passear pelas margens Graslei e Korenlei.</span>
-                                <p class="text-sm text-slate-500 mt-1"><strong>Sobre o Castelo (Gravensteen):</strong> Podem ver o castelo por fora. Como a vossa regra é evitar museus fechados, não vale a pena pagar bilhete para entrar (por dentro tem exposições de armas e antiguidade). A melhor foto tira-se da ponte exterior!</p>
-                            </div>
-                        </li>
-                        <li class="flex gap-3"><span class="text-orange-500 font-bold mt-0.5">🍲</span> <span><strong>Almoço:</strong> Provem o <em>Waterzooi</em>, um ensopado local rico e cremoso, original de Ghent. Excelente para um dia ameno e as crianças costumam adorar.</span></li>
-                    </ul>
+                    
+                    <div class="space-y-4">
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">07:00</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-yellow-400 rounded-full -left-[7px] top-1"></div><strong>Acordar & Pequeno-almoço</strong> no quarto.</div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">08:45</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-slate-300 rounded-full -left-[7px] top-1"></div><strong>Caminhada</strong> (10 min) para a estação Bruxelles-Midi.</div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">09:15</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-orange-500 rounded-full -left-[7px] top-1"></div><strong>Comboio para Ghent (Gent-Sint-Pieters).</strong> Viagem muito curta de ~35 mins.</div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">09:50</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-purple-400 rounded-full -left-[7px] top-1"></div><strong>Elétrico para o Centro.</strong> Apanhem o Elétrico 1 à saída da estação até "Korenmarkt" (10 mins). Não tentem ir a pé, são cerca de 30 minutos desde a estação ao centro!</div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">10:30</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-amber-600 rounded-full -left-[7px] top-1"></div><strong>Passeio.</strong> Margens Graslei, Korenlei e Castelo Gravensteen (Vejam por fora para não aborrecer os miúdos com a exposição museológica interior).</div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">12:30</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-green-500 rounded-full -left-[7px] top-1"></div><strong>Almoço:</strong> Provem o <em>Waterzooi</em> (ensopado cremoso).</div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">16:30</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-purple-400 rounded-full -left-[7px] top-1"></div><strong>Regresso à estação.</strong> Elétrico 1 volta a Sint-Pieters (10 mins).</div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">17:00</div><div class="pb-0 pl-4 relative"><div class="absolute w-3 h-3 bg-orange-500 rounded-full -left-[7px] top-1"></div><strong>Comboio para Bruxelas.</strong> (~35 mins). Chegada às 17h40.</div></div>
+                    </div>
                 </article>
 
                 <!-- Day 5 -->
                 <article class="card bg-white rounded-2xl p-6 shadow-sm border border-slate-100 mb-8">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div class="bg-red-500 text-white font-bold text-lg rounded-xl w-14 h-14 flex flex-col items-center justify-center shrink-0">
+                    <div class="flex items-center gap-4 mb-6 pb-4 border-b border-slate-50">
+                        <div class="bg-red-500 text-white font-bold text-lg rounded-xl w-14 h-14 flex flex-col items-center justify-center shrink-0 shadow">
                             <span>05</span>
                             <span class="text-xs font-normal">MAI</span>
                         </div>
                         <div>
                             <h3 class="text-xl font-bold text-slate-800">Terça-feira: Despedida</h3>
-                            <p class="text-slate-500 text-sm">Voo: Partida às 22:00 (CRL)</p>
+                            <p class="text-slate-500 text-sm">Gestão de tempo antes do voo (22:00)</p>
                         </div>
                     </div>
-                    <ul class="space-y-4 text-slate-600 mt-6">
-                        <li class="flex gap-3"><span class="text-red-500 font-bold mt-0.5">🛍️</span> <span>Manhã pelo bairro de Sablon, conhecido pelas luxuosas lojas de chocolate (ideal para compras de última hora).</span></li>
-                        <li class="flex gap-3"><span class="text-red-500 font-bold mt-0.5">🍽️</span> <span>Almoço calmo de despedida em Bruxelas.</span></li>
-                        <li class="flex gap-3"><span class="text-red-500 font-bold mt-0.5">🚌</span> <span><strong>18:30 -</strong> Apanhar o Flibco de regresso ao Aeroporto de Charleroi na estação Midi, garantindo chegada às 19:30.</span></li>
-                    </ul>
+                    
+                    <div class="space-y-4">
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">07:00</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-yellow-400 rounded-full -left-[7px] top-1"></div><strong>Acordar & Check-out.</strong> Podem pedir ao hotel para guardar as malas.</div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">09:30</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-slate-300 rounded-full -left-[7px] top-1"></div><strong>Caminhada ou Elétrico</strong> até à zona do Sablon (~15 mins a pé).</div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">10:00</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-amber-700 rounded-full -left-[7px] top-1"></div><strong>Compras de Chocolate</strong> nas lojas de excelência.</div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">13:00</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-green-500 rounded-full -left-[7px] top-1"></div><strong>Almoço de despedida.</strong></div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">15:30</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-slate-300 rounded-full -left-[7px] top-1"></div><strong>Regresso ao hotel</strong> para ir buscar as malas.</div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">18:00</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-slate-300 rounded-full -left-[7px] top-1"></div><strong>Caminhada até ao Flibco</strong> (na estação Midi, rua Rue de France - 10 mins).</div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">18:30</div><div class="pb-4 border-l-2 border-slate-200 pl-4 relative"><div class="absolute w-3 h-3 bg-blue-500 rounded-full -left-[7px] top-1"></div><strong>Viagem Flibco</strong> (~55 mins).</div></div>
+                        <div class="flex gap-4"><div class="timeline-time font-semibold text-slate-400 text-right">19:30</div><div class="pb-0 pl-4 relative"><div class="absolute w-3 h-3 bg-blue-700 rounded-full -left-[7px] top-1"></div><strong>Chegada a Charleroi</strong>. Muito tempo de sobra para a segurança (Voo às 22:00).</div></div>
+                    </div>
                 </article>
 
             </div>
@@ -217,12 +238,12 @@
                             <p class="text-sm text-slate-600">Estufado de vaca em cerveja preta. Super tenro. Servido com batatas.</p>
                         </div>
                         <div>
-                            <h4 class="font-bold text-slate-700">Stoemp com Salsicha</h4>
-                            <p class="text-sm text-slate-600">Puré rústico com legumes, salsicha grelhada e molho. Conforto puro.</p>
+                            <h4 class="font-bold text-slate-700">Waterzooi (Em Ghent)</h4>
+                            <p class="text-sm text-slate-600">Ensopado super cremoso de frango ou peixe com legumes.</p>
                         </div>
                         <div>
-                            <h4 class="font-bold text-slate-700">Boulets à la Liégeoise</h4>
-                            <p class="text-sm text-slate-600">Almôndegas com molho agridoce de maçã/pêra local. Diferente e delicioso.</p>
+                            <h4 class="font-bold text-slate-700">Stoemp com Salsicha</h4>
+                            <p class="text-sm text-slate-600">Puré rústico com legumes, salsicha grelhada e molho. Conforto puro.</p>
                         </div>
                         <div>
                             <h4 class="font-bold text-slate-700">Cervejas (Para os Adultos)</h4>
